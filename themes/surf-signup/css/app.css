@@ -4104,7 +4104,7 @@ a.thumbnail {
     clear: both; }
   .top-bar,
   .top-bar ul {
-    background-color: #e6e6e6; }
+    background-color: #fefefe; }
   .top-bar input {
     max-width: 200px;
     margin-right: 1rem; }
@@ -4699,3 +4699,82 @@ h1, h2, h3, h4 {
 
 h5 {
   font-weight: 500; }
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+#masthead {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto; }
+  #masthead::before, #masthead::after {
+    display: table;
+    content: ' '; }
+  #masthead::after {
+    clear: both; }
+  #masthead .site-branding {
+    width: 100%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem; }
+    @media print, screen and (min-width: 40em) {
+      #masthead .site-branding {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    #masthead .site-branding:last-child:not(:first-child) {
+      float: right; }
+    @media print, screen and (min-width: 40em) {
+      #masthead .site-branding {
+        width: 33.3333333333%;
+        float: left;
+        padding-right: 0.625rem;
+        padding-left: 0.625rem; } }
+  @media print, screen and (min-width: 40em) and (min-width: 40em) {
+    #masthead .site-branding {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem; } }
+    @media print, screen and (min-width: 40em) {
+        #masthead .site-branding:last-child:not(:first-child) {
+          float: right; } }
+  #masthead #site-navigation {
+    width: 100%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem; }
+    @media print, screen and (min-width: 40em) {
+      #masthead #site-navigation {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    #masthead #site-navigation:last-child:not(:first-child) {
+      float: right; }
+    @media print, screen and (min-width: 40em) {
+      #masthead #site-navigation {
+        width: 66.6666666667%; } }
+
+#content {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto; }
+  #content::before, #content::after {
+    display: table;
+    content: ' '; }
+  #content::after {
+    clear: both; }
+  #content #primary {
+    width: 100%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem; }
+    @media print, screen and (min-width: 40em) {
+      #content #primary {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    #content #primary:last-child:not(:first-child) {
+      float: right; }

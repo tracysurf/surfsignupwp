@@ -51,10 +51,65 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+//
+// Mixins
+//
+@mixin visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+//
+// Typography overrides
+//
+
 h1, h2, h3, h4 {
   text-align: center;
 }
 
 h5 {
   font-weight: $global-weight-bold;
+}
+
+.screen-reader-text {
+  @include visually-hidden;
+
+}
+
+//
+//  Layout
+//
+
+#masthead {
+  @include grid-row;
+
+  .site-branding {
+    @include grid-column(12);
+
+    @include breakpoint(medium) {
+      @include grid-column(4);
+    }
+  }
+
+  #site-navigation {
+    @include grid-column(12);
+
+    @include breakpoint(medium) {
+      @include grid-col-size(8);
+    }
+  }
+}
+
+#content {
+  @include grid-row;
+
+  #primary {
+    @include grid-column(12);
+  }
 }
