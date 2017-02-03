@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="39px" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.370000005">
+        <g id="Feature-Page" transform="translate(-611.000000, -828.000000)" stroke-width="2">
+            <g id="Ipad" transform="translate(355.000000, 489.000000)">
+                <g id="Arrow-Copy" transform="translate(275.500000, 358.500000) rotate(-180.000000) translate(-275.500000, -358.500000) translate(257.000000, 340.000000)">
+                    <circle id="Oval" stroke="#4C4C4C" cx="18.5" cy="18.5" r="18.5"></circle>
+                    <polyline id="Path-3" stroke="#000000" points="22.761091 10.2384905 10.679827 18.4148298 22.4900949 27.7525809"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
