@@ -26,7 +26,10 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="top-bar">
 			<div class="site-branding top-bar-title">
-				<strong><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></strong>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/surfsignup-logo.svg" alt="Surf Signup" />
+				</a>
+
 				<span data-responsive-toggle="site-navigation" data-hide-for="medium">
 					<button class="menu-icon dark" type="button" data-toggle></button>
 				</span>
