@@ -83,11 +83,12 @@ h5 {
 }
 
 //
-//  Layout
+//  General Layout
 //
 
 #masthead {
   @include grid-row;
+  margin-bottom: rem-calc(50);
 
   .site-branding {
     @include grid-column(12);
@@ -111,5 +112,127 @@ h5 {
 
   #primary {
     @include grid-column(12);
+
+    .entry-content > .row {
+      @include grid-row-nest;
+    }
+  }
+}
+
+//
+// Header
+//
+#masthead {
+  #site-navigation {
+    .menu {
+      a {
+        color: $black;
+        font-size: rem-calc(18);
+        font-weight: 400;
+
+        &:hover {
+          color: $primary-color;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .menu-icon {
+    float: right;
+  }
+}
+
+//
+// Footer
+//
+
+#colophon {
+  background: #363636;
+  padding-top: rem-calc(32);
+
+  .inner-wrapper {
+    @include grid-row;
+
+    a {
+      color: $light-gray;
+      font-weight: 400;
+    }
+
+    strong {
+      color: $light-gray;
+      font-size: rem-calc(18);
+    }
+
+    #footer-menu {
+      @include grid-col;
+      margin-bottom: rem-calc(16);
+
+      .menu > li > a {
+        padding-left: 0;
+      }
+
+      @include breakpoint(medium) {
+        @include grid-col-size(4);
+      }
+    }
+
+    #footer-contact {
+      @include grid-col;
+      margin-bottom: rem-calc(16);
+
+      @include breakpoint(medium) {
+        @include grid-col-size(4);
+      }
+    }
+
+    #footer-company {
+      @include grid-col;
+      margin-bottom: rem-calc(16);
+      text-align: center;
+
+      span[property="name"] {
+        @include visually-hidden;
+      }
+
+      @include breakpoint(medium) {
+        @include grid-col-size(4);
+      }
+    }
+  }
+}
+
+.site-info {
+  background: $black;
+  font-weight: 400;
+  padding-top: rem-calc(24);
+  margin-top: rem-calc(16);
+
+  *, a {
+    color: $light-gray;
+  }
+
+  .inner-wrapper {
+    @include grid-row;
+
+    .menu {
+      @include grid-col;
+
+      @include breakpoint(medium) {
+        @include grid-col-size(8);
+      }
+    }
+
+    .copyright {
+      @include grid-col;
+      padding-top: 0.7rem;
+      padding-bottom: 0.7rem;
+      line-height: 1;
+
+      @include breakpoint(medium) {
+        @include grid-col-size(4);
+        text-align: right;
+      }
+    }
   }
 }
