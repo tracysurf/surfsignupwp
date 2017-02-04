@@ -15,6 +15,7 @@
 		if ( is_single() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
+			printf( '<a href="%s" rel="bookmark">%s</a>', esc_url( get_permalink() ), get_the_post_thumbnail( get_the_ID(), 'large' ) );
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 
@@ -28,6 +29,7 @@
 
 	<div class="entry-content">
 		<?php
+		if ( is_single() ) {
 			the_content( sprintf(
 				/* translators: %s: Name of current post. */
 				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'surf-signup' ), array( 'span' => array( 'class' => array() ) ) ),
@@ -38,6 +40,10 @@
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'surf-signup' ),
 				'after'  => '</div>',
 			) );
+		} else {
+
+			the_excerpt();
+		}
 		?>
 	</div><!-- .entry-content -->
 

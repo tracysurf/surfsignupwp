@@ -4694,7 +4694,7 @@ a.thumbnail {
 .long-delay {
   animation-delay: 700ms !important; }
 
-h1, h2, h3, h4 {
+.single #primary h1, .single #primary h2, .single #primary h3, .single #primary h4, .page #primary h1, .page #primary h2, .page #primary h3, .page #primary h4 {
   text-align: center; }
 
 h5 {
@@ -4790,6 +4790,49 @@ h5 {
         #content #primary .entry-content > .row {
           margin-right: -0.9375rem;
           margin-left: -0.9375rem; } }
+
+@media print, screen and (min-width: 40em) {
+  .archive #content #primary, .single #content #primary {
+    width: 66.6666666667%; } }
+
+.archive #content #secondary, .single #content #secondary {
+  width: 100%;
+  float: left;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem; }
+  @media print, screen and (min-width: 40em) {
+    .archive #content #secondary, .single #content #secondary {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem; } }
+  .archive #content #secondary:last-child:not(:first-child), .single #content #secondary:last-child:not(:first-child) {
+    float: right; }
+  @media print, screen and (min-width: 40em) {
+    .archive #content #secondary, .single #content #secondary {
+      width: 25%;
+      margin-left: 8.3333333333%; } }
+
+.page-header {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  float: left;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  text-align: center; }
+  .page-header::before, .page-header::after {
+    display: table;
+    content: ' '; }
+  .page-header::after {
+    clear: both; }
+  @media print, screen and (min-width: 40em) {
+    .page-header {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem; } }
+  .page-header:last-child:not(:first-child) {
+    float: right; }
+  .page-header, .page-header:last-child {
+    float: none; }
 
 #masthead #site-navigation .menu a {
   color: #0a0a0a;
@@ -4926,3 +4969,9 @@ h5 {
         .site-info .inner-wrapper .copyright {
           width: 33.3333333333%;
           text-align: right; } }
+
+.widget {
+  margin-bottom: 2rem; }
+  @media print, screen and (min-width: 40em) {
+    .widget h2 {
+      font-size: 1.5rem; } }

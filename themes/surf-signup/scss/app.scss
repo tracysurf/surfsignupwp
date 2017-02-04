@@ -69,8 +69,12 @@
 // Typography overrides
 //
 
-h1, h2, h3, h4 {
-  text-align: center;
+.single, .page {
+  #primary {
+    h1, h2, h3, h4 {
+      text-align: center;
+    }
+  }
 }
 
 h5 {
@@ -91,15 +95,15 @@ h5 {
   margin-bottom: rem-calc(50);
 
   .site-branding {
-    @include grid-column(12);
+    @include grid-col(12);
 
     @include breakpoint(medium) {
-      @include grid-column(4);
+      @include grid-col(4);
     }
   }
 
   #site-navigation {
-    @include grid-column(12);
+    @include grid-col(12);
 
     @include breakpoint(medium) {
       @include grid-col-size(8);
@@ -111,12 +115,34 @@ h5 {
   @include grid-row;
 
   #primary {
-    @include grid-column(12);
+    @include grid-col(12);
 
     .entry-content > .row {
       @include grid-row-nest;
     }
   }
+}
+
+.archive, .single {
+  #content {
+    #primary {
+      @include breakpoint(medium) {
+        @include grid-col-size(8);
+      }
+    }
+    #secondary{
+      @include grid-col(12);
+      @include breakpoint(medium) {
+        @include grid-col-size(3);
+        @include grid-col-off(1);
+      }
+    }
+  }
+}
+
+.page-header {
+  @include grid-col-row;
+  text-align: center;
 }
 
 //
@@ -233,6 +259,19 @@ h5 {
         @include grid-col-size(4);
         text-align: right;
       }
+    }
+  }
+}
+
+//
+// Sidebar
+//
+.widget {
+  margin-bottom: rem-calc(32);
+
+  h2 {
+    @include breakpoint(medium) {
+      font-size: rem-calc(24);
     }
   }
 }
