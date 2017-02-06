@@ -11,7 +11,17 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php
+		metadata_exists( 'post', get_the_ID(), '_surfsignup_tout1') ?
+			printf( '<p class="tout txt1">%s</p>', get_post_meta( get_the_ID(), '_surfsignup_tout1', true )) :
+			'';
+
+		the_title( '<h1 class="entry-title">', '</h1>' );
+
+		metadata_exists( 'post', get_the_ID(), '_surfsignup_tout2') ?
+			printf( '<p class="tout txt2">%s</p>', get_post_meta( get_the_ID(), '_surfsignup_tout2', true )) :
+			'';
+		?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
