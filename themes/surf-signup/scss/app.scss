@@ -81,9 +81,49 @@ h5 {
   font-weight: $global-weight-bold;
 }
 
+.bump {
+  font-size: rem-calc(18);
+  font-weight: 500;
+}
+
+.tout {
+  text-align: center;
+  &.txt1 {
+    font-size: rem-calc(39.2);
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+  &.txt2 {
+    font-size: rem-calc(28);
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+}
+
+.sub1 {
+  font-size: rem-calc(22.96);
+  font-weight: 400;
+}
+
+.sub2 {
+  font-size: rem-calc(18);
+}
+
 .screen-reader-text {
   @include visually-hidden;
+}
 
+a.button, input[type="submit"] {
+  font-weight: 500;
+
+  .top {
+    font-size: rem-calc(24);
+  }
+
+  .sub {
+    display: inline-block;
+    margin-top: rem-calc(6);
+  }
 }
 
 //
@@ -140,9 +180,10 @@ h5 {
   }
 }
 
-.page-header {
+.page-header, .entry-header {
   @include grid-col-row;
   text-align: center;
+  margin-bottom: rem-calc(48);
 }
 
 //
