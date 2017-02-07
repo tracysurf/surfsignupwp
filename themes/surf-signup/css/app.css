@@ -4694,7 +4694,7 @@ a.thumbnail {
 .long-delay {
   animation-delay: 700ms !important; }
 
-.single #primary h1, .single #primary h2, .single #primary h3, .single #primary h4, .page #primary h1, .page #primary h2, .page #primary h3, .page #primary h4 {
+.page #primary h1, .page #primary h2, .page #primary h3, .page #primary h4 {
   text-align: center; }
 
 h5 {
@@ -4790,58 +4790,9 @@ a.button, input[type="submit"] {
         width: 66.6666666667%; } }
 
 #content {
-  max-width: 75rem;
-  margin-right: auto;
-  margin-left: auto; }
-  #content::before, #content::after {
-    display: table;
-    content: ' '; }
-  #content::after {
-    clear: both; }
-  #content #primary {
-    width: 100%;
-    float: left;
-    padding-right: 0.625rem;
-    padding-left: 0.625rem; }
-    @media print, screen and (min-width: 40em) {
-      #content #primary {
-        padding-right: 0.9375rem;
-        padding-left: 0.9375rem; } }
-    #content #primary:last-child:not(:first-child) {
-      float: right; }
-    #content #primary .entry-content > .row {
-      margin-right: -0.625rem;
-      margin-left: -0.625rem; }
-      @media print, screen and (min-width: 40em) {
-        #content #primary .entry-content > .row {
-          margin-right: -0.9375rem;
-          margin-left: -0.9375rem; } }
-      @media print, screen and (min-width: 64em) {
-        #content #primary .entry-content > .row {
-          margin-right: -0.9375rem;
-          margin-left: -0.9375rem; } }
+  padding-bottom: 3rem; }
 
-@media print, screen and (min-width: 40em) {
-  .archive #content #primary, .single #content #primary {
-    width: 66.6666666667%; } }
-
-.archive #content #secondary, .single #content #secondary {
-  width: 100%;
-  float: left;
-  padding-right: 0.625rem;
-  padding-left: 0.625rem; }
-  @media print, screen and (min-width: 40em) {
-    .archive #content #secondary, .single #content #secondary {
-      padding-right: 0.9375rem;
-      padding-left: 0.9375rem; } }
-  .archive #content #secondary:last-child:not(:first-child), .single #content #secondary:last-child:not(:first-child) {
-    float: right; }
-  @media print, screen and (min-width: 40em) {
-    .archive #content #secondary, .single #content #secondary {
-      width: 25%;
-      margin-left: 8.3333333333%; } }
-
-.page-header, .entry-header {
+article.page .entry-header {
   max-width: 75rem;
   margin-right: auto;
   margin-left: auto;
@@ -4851,18 +4802,84 @@ a.button, input[type="submit"] {
   padding-left: 0.625rem;
   text-align: center;
   margin-bottom: 3rem; }
-  .page-header::before, .page-header::after, .entry-header::before, .entry-header::after {
+  article.page .entry-header::before, article.page .entry-header::after {
     display: table;
     content: ' '; }
-  .page-header::after, .entry-header::after {
+  article.page .entry-header::after {
     clear: both; }
   @media print, screen and (min-width: 40em) {
-    .page-header, .entry-header {
+    article.page .entry-header {
       padding-right: 0.9375rem;
       padding-left: 0.9375rem; } }
-  .page-header:last-child:not(:first-child), .entry-header:last-child:not(:first-child) {
+  article.page .entry-header:last-child:not(:first-child) {
     float: right; }
-  .page-header, .page-header:last-child, .entry-header, .entry-header:last-child {
+  article.page .entry-header, article.page .entry-header:last-child {
+    float: none; }
+
+.archive #content, .single #content {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto; }
+  .archive #content::before, .archive #content::after, .single #content::before, .single #content::after {
+    display: table;
+    content: ' '; }
+  .archive #content::after, .single #content::after {
+    clear: both; }
+  .archive #content #primary, .single #content #primary {
+    width: 100%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem; }
+    @media print, screen and (min-width: 40em) {
+      .archive #content #primary, .single #content #primary {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    .archive #content #primary:last-child:not(:first-child), .single #content #primary:last-child:not(:first-child) {
+      float: right; }
+    @media print, screen and (min-width: 40em) {
+      .archive #content #primary, .single #content #primary {
+        width: 66.6666666667%; } }
+    .archive #content #primary .entry-header, .single #content #primary .entry-header {
+      margin-bottom: 2rem;
+      text-align: left; }
+  .archive #content #secondary, .single #content #secondary {
+    width: 100%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem; }
+    @media print, screen and (min-width: 40em) {
+      .archive #content #secondary, .single #content #secondary {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    .archive #content #secondary:last-child:not(:first-child), .single #content #secondary:last-child:not(:first-child) {
+      float: right; }
+    @media print, screen and (min-width: 40em) {
+      .archive #content #secondary, .single #content #secondary {
+        width: 25%;
+        margin-left: 8.3333333333%; } }
+
+.archive .page-header {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  float: left;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  text-align: center;
+  margin-bottom: 3rem; }
+  .archive .page-header::before, .archive .page-header::after {
+    display: table;
+    content: ' '; }
+  .archive .page-header::after {
+    clear: both; }
+  @media print, screen and (min-width: 40em) {
+    .archive .page-header {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem; } }
+  .archive .page-header:last-child:not(:first-child) {
+    float: right; }
+  .archive .page-header, .archive .page-header:last-child {
     float: none; }
 
 #masthead #site-navigation .menu a {

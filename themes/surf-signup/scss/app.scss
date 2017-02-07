@@ -69,7 +69,7 @@
 // Typography overrides
 //
 
-.single, .page {
+.page {
   #primary {
     h1, h2, h3, h4 {
       text-align: center;
@@ -126,6 +126,8 @@ a.button, input[type="submit"] {
   }
 }
 
+
+
 //
 //  General Layout
 //
@@ -152,24 +154,36 @@ a.button, input[type="submit"] {
 }
 
 #content {
-  @include grid-row;
 
-  #primary {
-    @include grid-col(12);
+  padding-bottom: rem-calc(48);
+}
 
-    .entry-content > .row {
-      @include grid-row-nest;
-    }
+article.page {
+  .entry-header {
+    @include grid-col-row;
+    text-align: center;
+    margin-bottom: rem-calc(48);
   }
 }
 
 .archive, .single {
+
   #content {
+
+    @include grid-row;
+
     #primary {
+      @include grid-col(12);
       @include breakpoint(medium) {
         @include grid-col-size(8);
       }
+
+      .entry-header {
+        margin-bottom: rem-calc(32);
+        text-align: left;
+      }
     }
+
     #secondary{
       @include grid-col(12);
       @include breakpoint(medium) {
@@ -180,11 +194,15 @@ a.button, input[type="submit"] {
   }
 }
 
-.page-header, .entry-header {
-  @include grid-col-row;
-  text-align: center;
-  margin-bottom: rem-calc(48);
+.archive {
+
+  .page-header {
+    @include grid-col-row;
+    text-align: center;
+    margin-bottom: rem-calc(48);
+  }
 }
+
 
 //
 // Header
