@@ -4061,45 +4061,45 @@ article.page .grey-band {
   padding: 2rem 0;
   background: #e6e6e6; }
 
-.archive #content, .single #content {
+.archive #content, .single #content, .blog #content {
   max-width: 75rem;
   margin-right: auto;
   margin-left: auto; }
-  .archive #content::before, .archive #content::after, .single #content::before, .single #content::after {
+  .archive #content::before, .archive #content::after, .single #content::before, .single #content::after, .blog #content::before, .blog #content::after {
     display: table;
     content: ' '; }
-  .archive #content::after, .single #content::after {
+  .archive #content::after, .single #content::after, .blog #content::after {
     clear: both; }
-  .archive #content #primary, .single #content #primary {
+  .archive #content #primary, .single #content #primary, .blog #content #primary {
     width: 100%;
     float: left;
     padding-right: 0.625rem;
     padding-left: 0.625rem; }
     @media print, screen and (min-width: 40em) {
-      .archive #content #primary, .single #content #primary {
+      .archive #content #primary, .single #content #primary, .blog #content #primary {
         padding-right: 0.9375rem;
         padding-left: 0.9375rem; } }
-    .archive #content #primary:last-child:not(:first-child), .single #content #primary:last-child:not(:first-child) {
+    .archive #content #primary:last-child:not(:first-child), .single #content #primary:last-child:not(:first-child), .blog #content #primary:last-child:not(:first-child) {
       float: right; }
     @media print, screen and (min-width: 40em) {
-      .archive #content #primary, .single #content #primary {
+      .archive #content #primary, .single #content #primary, .blog #content #primary {
         width: 66.6666666667%; } }
-    .archive #content #primary .entry-header, .single #content #primary .entry-header {
+    .archive #content #primary .entry-header, .single #content #primary .entry-header, .blog #content #primary .entry-header {
       margin-bottom: 2rem;
       text-align: left; }
-  .archive #content #secondary, .single #content #secondary {
+  .archive #content #secondary, .single #content #secondary, .blog #content #secondary {
     width: 100%;
     float: left;
     padding-right: 0.625rem;
     padding-left: 0.625rem; }
     @media print, screen and (min-width: 40em) {
-      .archive #content #secondary, .single #content #secondary {
+      .archive #content #secondary, .single #content #secondary, .blog #content #secondary {
         padding-right: 0.9375rem;
         padding-left: 0.9375rem; } }
-    .archive #content #secondary:last-child:not(:first-child), .single #content #secondary:last-child:not(:first-child) {
+    .archive #content #secondary:last-child:not(:first-child), .single #content #secondary:last-child:not(:first-child), .blog #content #secondary:last-child:not(:first-child) {
       float: right; }
     @media print, screen and (min-width: 40em) {
-      .archive #content #secondary, .single #content #secondary {
+      .archive #content #secondary, .single #content #secondary, .blog #content #secondary {
         width: 25%;
         margin-left: 8.3333333333%; } }
 
