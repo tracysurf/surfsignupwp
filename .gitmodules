@@ -1,0 +1,3 @@
+[submodule "plugins/a21-slider"]
+	path = plugins/a21-slider
+	url = git@github.com:21applications/21-Slider.git

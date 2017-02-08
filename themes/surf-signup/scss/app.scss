@@ -338,3 +338,18 @@ article.page {
     }
   }
 }
+
+//
+// Slider overrides
+//
+
+.a21-slider {
+  background-image: url( '../assets/ipad-white-background.png' );
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 3% 10% 3% 5%;
+
+  div.slider {
+    padding-bottom: 69%;
+  }
+}

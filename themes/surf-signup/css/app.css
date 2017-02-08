@@ -4268,3 +4268,11 @@ article.page .grey-band {
   @media print, screen and (min-width: 40em) {
     .widget h2 {
       font-size: 1.5rem; } }
+
+.a21-slider {
+  background-image: url("../assets/ipad-white-background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 3% 10% 3% 5%; }
+  .a21-slider div.slider {
+    padding-bottom: 69%; }
