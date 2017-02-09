@@ -4322,8 +4322,19 @@ article.page .grey-band {
 
 .a21-slider {
   background-image: url("../assets/ipad-white-background.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  padding: 3% 10% 3% 5%; }
+  padding: 6% 11% 7% 12%; }
+  .a21-slider .flickity-page-dots {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px; }
   .a21-slider div.slider {
-    padding-bottom: 69%; }
+    padding-bottom: 69%;
+    margin-top: 1%;
+    margin-bottom: 3%; }

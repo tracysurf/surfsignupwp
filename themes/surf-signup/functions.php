@@ -64,6 +64,8 @@ function surf_signup_setup() {
 
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
+
+	add_image_size( 'slide', 901, 622, true );
 }
 endif;
 add_action( 'after_setup_theme', 'surf_signup_setup' );
