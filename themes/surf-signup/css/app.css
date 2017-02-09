@@ -4127,6 +4127,57 @@ article.page .grey-band {
   .archive .page-header, .archive .page-header:last-child {
     float: none; }
 
+@media print, screen and (min-width: 40em) {
+  .post-type-archive #content #primary {
+    width: 100%; } }
+
+.post-type-archive .archive-body > .testimonial {
+  float: left;
+  width: 100%; }
+  .post-type-archive .archive-body > .testimonial:nth-of-type(1n) {
+    clear: none; }
+  .post-type-archive .archive-body > .testimonial:nth-of-type(1n+1) {
+    clear: both; }
+  .post-type-archive .archive-body > .testimonial:last-child {
+    float: left; }
+
+@media print, screen and (min-width: 40em) {
+  .post-type-archive .archive-body > .testimonial {
+    float: left;
+    width: 33.3333333333%; }
+    .post-type-archive .archive-body > .testimonial:nth-of-type(1n) {
+      clear: none; }
+    .post-type-archive .archive-body > .testimonial:nth-of-type(3n+1) {
+      clear: both; }
+    .post-type-archive .archive-body > .testimonial:last-child {
+      float: left; } }
+
+.post-type-archive .archive-body .testimonial {
+  margin-bottom: 2rem; }
+  .post-type-archive .archive-body .testimonial [property="image"] {
+    margin-bottom: 2rem;
+    text-align: center; }
+    .post-type-archive .archive-body .testimonial [property="image"] img {
+      width: 70%; }
+
+.post-type-archive .archive-body blockquote {
+  margin-bottom: 0;
+  padding: 0;
+  border-left: none; }
+  .post-type-archive .archive-body blockquote p {
+    font-family: Quicksand, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 400;
+    color: #0a0a0a;
+    line-height: 1.25; }
+  .post-type-archive .archive-body blockquote cite {
+    font-style: normal;
+    font-size: 1rem;
+    color: #0a0a0a; }
+    .post-type-archive .archive-body blockquote cite .person {
+      font-weight: bold; }
+    .post-type-archive .archive-body blockquote cite:before {
+      content: none; }
+
 #masthead #site-navigation .menu a {
   color: #0a0a0a;
   font-size: 1.125rem;

@@ -207,7 +207,68 @@ article.page {
   }
 }
 
+.post-type-archive {
+  #content {
+    #primary {
+      @include breakpoint(medium) {
+        @include grid-col-size(12);
+      }
+    }
+  }
 
+  .archive-body {
+
+    @include grid-layout( 1, '.testimonial' );
+
+    @include breakpoint( medium ) {
+      @include grid-layout( 3, '.testimonial' );
+    }
+
+    .testimonial {
+      margin-bottom: rem-calc(32);
+
+      [property="image"] {
+        margin-bottom: rem-calc(32);
+        text-align: center;
+
+        img {
+          width: 70%;
+        }
+      }
+    }
+
+    blockquote {
+
+      margin-bottom: 0;
+      padding: 0;
+      border-left: none;
+
+      p {
+
+        font-family: $header-font-family;
+        font-weight: 400;
+        color: $black;
+        line-height: 1.25;
+      }
+
+      cite {
+
+        font-style: normal;
+        font-size: rem-calc(16);
+        color: $body-font-color;
+
+        .person {
+          font-weight: bold;
+        }
+
+        &:before {
+          content: none;
+        }
+      }
+    }
+
+  }
+}
 //
 // Header
 //

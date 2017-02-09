@@ -21,6 +21,12 @@
 		"oAP": "\/404.php",
 		"oF": 0
 		},
+	"\/archive-surf_testimonial.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive-surf_testimonial.php",
+		"oF": 0
+		},
 	"\/archive.php": {
 		"ft": 8192,
 		"oA": 2,
