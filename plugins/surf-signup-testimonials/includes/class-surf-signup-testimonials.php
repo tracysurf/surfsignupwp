@@ -174,9 +174,6 @@ class Surf_Signup_Testimonials {
 
 		$plugin_public = new Surf_Signup_Testimonials_Public( $this->get_plugin_name(), $this->get_version() );
 
-		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
-		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
-
 	}
 
 	/**
