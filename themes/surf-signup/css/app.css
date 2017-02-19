@@ -4427,3 +4427,15 @@ article.page .grey-band {
     padding-bottom: 69%;
     margin-top: 1%;
     margin-bottom: 3%; }
+
+
+/*contact page*/
+.contact-info {
+    background: #c1e749;
+    padding: 20px !important;
+}
+
+label {
+	font-weight: 500;
+	font-size: 1.2em
+}

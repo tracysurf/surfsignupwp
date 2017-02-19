@@ -86,5 +86,27 @@
 
 <?php wp_footer(); ?>
 
+<!--Start of HappyFox Live Chat Script-->
+<script>
+ window.HFCHAT_CONFIG = {
+     EMBED_TOKEN: "c61a7f70-e9d5-11e6-a655-c3c40f20b8d1",
+     ACCESS_TOKEN: "6dbe62d2317849c6b76b72891fc92772",
+     HOST_URL: "https://happyfoxchat.com",
+     ASSETS_URL: "https://d1l7z5ofrj6ab8.cloudfront.net/visitor"
+ };
+
+(function() {
+  var scriptTag = document.createElement('script');
+  scriptTag.type = 'text/javascript';
+  scriptTag.async = true;
+  scriptTag.src = window.HFCHAT_CONFIG.ASSETS_URL + '/js/widget-loader.js';
+
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(scriptTag, s);
+})();
+</script>
+<!--End of HappyFox Live Chat Script-->
+
+
 </body>
 </html>
