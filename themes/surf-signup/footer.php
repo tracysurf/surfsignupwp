@@ -33,19 +33,25 @@
 			<div id="footer-contact">
 				<strong><?php _e( 'Questions', 'surf-signup' );?></strong><br/>
 
+
 				<a class="telephone" url="tel:(949)682-8457>">
-					<span property="telephone"><?php _e( '(949) 682-8457', 'surf-signup' )?></span>
+					<span property="telephone"><?php _e( 'Call Us at: (949) 682-8457', 'surf-signup' )?></span>
 				</a>
+				<p>Located in Southern California</p>
+				<p><strong>Need Support?</strong><br>
+				Call us or visit our support center</p>
 
 			</div>
 
 			<div id="footer-company">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-					<img property="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/surf-signup-logo-white.png" alt="Surf Signup" />
+					<img property="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/SurfSignup-logo-white.png" alt="Surf Signup" />
 				</a><br/>
+				<p>Simple and secure event<br>
+					registration and management</p><br>
 				<span property="name"><?php _e( 'Surf Signup', 'surf-signup')?></span>
 
-				<img class="badges" src="<?php echo get_stylesheet_directory_uri();?>/assets/coming-soon.png" />
+				<img class="badges" src="https://surfsignup.com/images/cards.png" />
 			</div>
 
 
@@ -54,7 +60,7 @@
 		<div class="site-info">
 			<div class="inner-wrapper">
 				<ul class="menu horizontal">
-
+<li>By using this site, you agree with our:</li>
 	        <?php
 	        $site_info_args = array(
 	          'theme_location' => 'site-info',
@@ -67,7 +73,7 @@
 	      </ul>
 				<div class="copyright">
 					<?php
-					printf( __( '%s Immersion Media', 'surf-signup' ), surf_signup_copyright() );
+					printf( __( '© Copyright %s Surf Signup LLC. All Rights Reserved.', 'surf-signup' ), surf_signup_copyright() );
 					?>
 				</div>
 			</div>

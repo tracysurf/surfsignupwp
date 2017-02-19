@@ -1766,20 +1766,20 @@ h6 {
     color: #cacaca; }
 
 h1 {
-  font-size: 1.5rem;
-  line-height: 1.4;
+  font-size: 1.9rem;
+  line-height: 1;
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
 h2 {
-  font-size: 1.25rem;
+  font-size: 1.85rem;
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
 h3 {
-  font-size: 1.1875rem;
-  line-height: 1.4;
+  font-size: 1.9875rem;
+  line-height: 1;
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
@@ -3468,13 +3468,13 @@ a.thumbnail {
     .show-for-portrait {
       display: block !important; } }
 
-.float-left {
+.float-left, .alignleft {
   float: left !important; }
 
-.float-right {
+.float-right, .alignright {
   float: right !important; }
 
-.float-center {
+.float-center, .aligncenter {
   display: block;
   margin-right: auto;
   margin-left: auto; }
@@ -3954,7 +3954,8 @@ h5 {
   .tout.txt2 {
     font-size: 1.75rem;
     font-weight: 300;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    line-height: 1.2; }
 
 .sub1 {
   font-size: 1.435rem;
@@ -4032,6 +4033,73 @@ a.button, input[type="submit"] {
 
 #content {
   padding-bottom: 3rem; }
+  
+/**homepage**/
+
+.featured-col {
+	background-image: url("../assets/low-poly-water-background.png");
+	padding: 65px 5% 50px;
+	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.featured-col ul li {
+    font-size: 1.3em;
+    line-height: 2.3;
+    list-style-type: circle;
+    text-align: left
+}
+
+.content-well {
+    margin-top: 60px;
+    margin-bottom: 60px
+}
+
+.page #primary .testimonals h4, .page #primary .content-well h4 {
+	text-align: left
+}
+
+.price-box {
+	 background-color: #363636;
+	 color: #fff;
+	 text-align: center;
+	 padding: 30px
+	 
+}
+
+.price-box-inner {
+	height: 77px;
+	position: relative;
+	top:-30px
+}
+
+.price1 {
+	font-size: 20px;
+	display: block;
+	font-weight: 400;
+
+	
+}
+
+.price2 {
+	font-size: 96px;
+}
+
+.price2 small {
+	font-size: 50px;
+	top: -30px;
+	position: relative
+}
+.price2 small:first-child {
+	font-size: 40px;
+	top: -35px;
+	margin-right: 5px
+}
+
+.price3 {
+	color:#979797
+}
 
 article.page .entry-header {
   max-width: 75rem;
@@ -4190,7 +4258,7 @@ article.page .grey-band {
   float: right; }
 
 #colophon {
-  background: #363636;
+  background: #121214;
   padding-top: 2rem; }
   #colophon .inner-wrapper {
     max-width: 75rem;
@@ -4230,6 +4298,9 @@ article.page .grey-band {
       padding-right: 0.625rem;
       padding-left: 0.625rem;
       margin-bottom: 1rem; }
+     #footer-contact p {
+	     color: #fff
+     }
       @media print, screen and (min-width: 40em) {
         #colophon .inner-wrapper #footer-contact {
           padding-right: 0.9375rem;
@@ -4245,7 +4316,9 @@ article.page .grey-band {
       padding-right: 0.625rem;
       padding-left: 0.625rem;
       margin-bottom: 1rem;
-      text-align: center; }
+      text-align: center;
+      color: #fff;
+      font-weight: 600 }
       @media print, screen and (min-width: 40em) {
         #colophon .inner-wrapper #footer-company {
           padding-right: 0.9375rem;
@@ -4266,10 +4339,13 @@ article.page .grey-band {
           width: 33.3333333333%; } }
 
 .site-info {
-  background: #0a0a0a;
-  font-weight: 400;
-  padding-top: 1.5rem;
-  margin-top: 1rem; }
+  background: #000;
+    font-weight: 500;
+    padding-top: 1.5rem;
+    margin-top: 1rem;
+    font-size: .8em;
+    }
+    
   .site-info *, .site-info a {
     color: #e6e6e6; }
   .site-info .inner-wrapper {
