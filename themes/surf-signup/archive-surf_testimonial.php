@@ -17,10 +17,7 @@ get_header();
 		if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
+				<?php the_archive_title( '<h1 class="page-title"> What Industry Leaders Say</h1><p>We work hard and have great reviews from our event organizers and users to show for it.</p>' ); ?>
 			</header><!-- .page-header -->
 
 			<div class="archive-body grid">
@@ -38,8 +35,7 @@ get_header();
 										<cite property="author" typeof="Person">
 											<span property="name" class="person">%s</span><br/>
 											<span property="worksFor" typeof="Organization">
-												<span property="roleName">%s</span>,&nbsp;
-												<span property="name">%s</span>
+												<span property="roleName">%s</span>
 											</span>
 											</cite></footer>
 								</blockquote>

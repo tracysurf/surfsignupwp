@@ -132,12 +132,6 @@ class Surf_Signup_Testimonials_Testimonial {
 		) );
 
 		$details_box->add_field( array(
-			'name' => __( 'Company', 'surf-signup-testimonials' ),
-			'id'   => $prefix . 'company',
-			'type' => 'text'
-		) );
-
-		$details_box->add_field( array(
 			'name' => __( 'Include in slider', 'surf-signup-testimonials' ),
 			'id'   => $prefix . 'slider',
 			'type' => 'checkbox',

@@ -1,0 +1,120 @@
+
+@mixin vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin horizontal-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.a21-slider {
+  margin-bottom: 16px;
+}
+
+div.slider {
+
+  width: 100%;
+
+  div.slide {
+    width: 100%;
+    min-height: 351px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .slide-wrapper {
+      position: relative;
+
+      .text {
+
+        position: absolute;
+
+        a {
+          color: inherit;
+        }
+
+        &.top-left {
+          top: 15%;
+          left: 10%;
+        }
+
+        &.top-centre {
+          top: 15%;
+          @include horizontal-center;
+        }
+
+        &.top-right {
+          top: 15%;
+          right: 10%;
+        }
+
+        &.centre-left {
+          left: 10%;
+          @include vertical-center;
+        }
+
+        &.centre-centre {
+          @include absolute-center;
+        }
+
+        &.centre-right {
+          @include vertical-center;
+          right: 10%;
+        }
+
+        &.bottom-left {
+          bottom: 15%;
+          left: 10%;
+        }
+
+        &.bottom-centre {
+          bottom: 15%;
+          @include horizontal-center;
+        }
+
+        &.bottom-right {
+          bottom: 15%;
+          right: 10%;
+        }
+
+
+      }
+    }
+  }
+
+  .flickity-page-dots { bottom: 10px; }
+
+}
+
+div.slide-nav {
+  margin-top: 10px;
+  .flickity-prev-next-button {
+    background: none;
+  }
+
+  div.slide {
+    width: 100px;
+    height: 100px;
+
+    &:not(:first-of-type) {
+      margin-left: 5px;
+    }
+
+    &:not(:last-of-type) {
+      margin-right: 5px;
+    }
+  }
+}

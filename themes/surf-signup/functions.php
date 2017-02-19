@@ -140,6 +140,16 @@ require get_template_directory() . '/inc/jetpack.php';
  */
 require get_template_directory() . '/inc/page-meta.php';
 
+add_filter( 'body_class','support_class' );
+function support_class( $classes ) {
+ 
+    if ( is_page_template( 'page-sidebar.php' ) ) {
+        $classes[] = 'single';
+    }
+     
+    return $classes;
+     
+}
 
 add_filter( 'get_the_archive_title', function ( $title ) {
 

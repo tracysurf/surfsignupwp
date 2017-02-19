@@ -1,0 +1,1 @@
+!function($){"use strict";$(function(){$(".slider").flickity({prevNextButtons:!0,pageDots:!0,autoPlay:$(".slider").data("autoplay"),imagesLoaded:!0}),$(".slide-nav").flickity({asNavFor:".slider",contain:!0,pageDots:!1})})}(jQuery);

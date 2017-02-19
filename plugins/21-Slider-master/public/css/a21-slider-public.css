@@ -1,0 +1,68 @@
+.a21-slider {
+  margin-bottom: 16px; }
+
+div.slider {
+  width: 100%; }
+  div.slider div.slide {
+    width: 100%;
+    min-height: 351px; }
+    div.slider div.slide img {
+      width: 100%;
+      height: auto; }
+    div.slider div.slide .slide-wrapper {
+      position: relative; }
+      div.slider div.slide .slide-wrapper .text {
+        position: absolute; }
+        div.slider div.slide .slide-wrapper .text a {
+          color: inherit; }
+        div.slider div.slide .slide-wrapper .text.top-left {
+          top: 15%;
+          left: 10%; }
+        div.slider div.slide .slide-wrapper .text.top-centre {
+          top: 15%;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%); }
+        div.slider div.slide .slide-wrapper .text.top-right {
+          top: 15%;
+          right: 10%; }
+        div.slider div.slide .slide-wrapper .text.centre-left {
+          left: 10%;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%); }
+        div.slider div.slide .slide-wrapper .text.centre-centre {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
+        div.slider div.slide .slide-wrapper .text.centre-right {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 10%; }
+        div.slider div.slide .slide-wrapper .text.bottom-left {
+          bottom: 15%;
+          left: 10%; }
+        div.slider div.slide .slide-wrapper .text.bottom-centre {
+          bottom: 15%;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%); }
+        div.slider div.slide .slide-wrapper .text.bottom-right {
+          bottom: 15%;
+          right: 10%; }
+  div.slider .flickity-page-dots {
+    bottom: 10px; }
+
+div.slide-nav {
+  margin-top: 10px; }
+  div.slide-nav .flickity-prev-next-button {
+    background: none; }
+  div.slide-nav div.slide {
+    width: 100px;
+    height: 100px; }
+    div.slide-nav div.slide:not(:first-of-type) {
+      margin-left: 5px; }
+    div.slide-nav div.slide:not(:last-of-type) {
+      margin-right: 5px; }
